@@ -1,4 +1,5 @@
 import SimpleInput from './SimpleInput';
+import './index.css';
 
 function App() {
   return (
