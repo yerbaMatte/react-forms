@@ -24,12 +24,10 @@ const SimpleInput = () => {
 
     setEnteredNameTouched(true);
 
-    if (enteredName.trim() === '') {
-      setEnteredNameIsValid(false);
+    if (!enteredNameIsValid) {
       return;
     }
 
-    setEnteredNameIsValid(true);
     setEnteredName('');
   };
 
