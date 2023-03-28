@@ -16,6 +16,10 @@ const SimpleInput = () => {
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setEnteredName(event.target.value);
+    if (enteredName.trim() !== '') {
+      setEnteredNameIsValid(true);
+      return;
+    }
   };
 
   const nameInputBlurHandler: React.FocusEventHandler<HTMLInputElement> = (
