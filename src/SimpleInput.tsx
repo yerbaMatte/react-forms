@@ -8,7 +8,7 @@ const SimpleInput = () => {
   const enteredNameIsValid = enteredName.trim() !== '';
   const nameInputIsInvalid = !enteredNameIsValid && enteredNameTouched;
 
-  let formIsValid = false;
+  // let formIsValid = false;
 
   if (enteredNameIsValid) {
     formIsValid = true;
